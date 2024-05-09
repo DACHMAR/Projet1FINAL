@@ -832,9 +832,12 @@ nav a {
     .cadres-ronds {
       display: block;
       width: 100%;
+      align-items: center;
+      justify-content: center;
     }
     .cadre2 {
       border: none;
+      display: none;
     }
   }
   @media screen and (max-width: 811px) {
@@ -873,10 +876,10 @@ nav a {
   }
   @media screen and (max-width: 555px) {
     .nav-toggler {
-      left:380px;
+      left:300px;
       position: fixed;
       z-index: 10;
-      top: 800px;
+      top: 700px;
       right: 30px;
       height: 50px;
       width: 40px;
