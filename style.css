@@ -157,7 +157,7 @@ h1 span {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    transform: translateX(150%);
+    transform: translateX(250%);
     transition: transform 0.9s cubic-bezier(0.73, 0.11, 0.67, 0.84);
     
 }
