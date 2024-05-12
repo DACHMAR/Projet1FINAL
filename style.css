@@ -137,6 +137,7 @@ h1 span {
     font-size: 40px;
     font-size: 1.3em;
     font-weight: 800;
+    list-style: none;
     }
     .image-container {
       position: relative;
@@ -151,13 +152,13 @@ h1 span {
     
     .text-overlay {
       position: absolute;
-      top: 80%; /* Centre verticalement le texte - ajustez selon les besoins */
-      left: 55%; /* Centre horizontalement le texte */
-      transform: translate(-50%, -50%); /* Alignement précis au centre */
-      width: 100%; /* Assure que le texte ne dépasse pas les limites de l'image */
+      top: 80%; 
+      left: 55%; 
+      transform: translate(-50%, -50%); 
+      width: 100%; 
       box-sizing: border-box;
       color: #ffffff;
-      text-align: center; /* Assure que le texte est centré à l'intérieur de la boîte */
+      text-align: center; 
     }
     
     .text-overlay h1 {
@@ -386,13 +387,12 @@ section#contact {
   /* Slide */
   
 .bouton {
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    max-width: ;width: 1440px;
+    max-width: width: 1440px ;
     padding: 10px;
     padding-bottom: 20px;
-    
   }
   .btn {
     padding: 10px 25px;
@@ -413,7 +413,7 @@ section#contact {
     border-radius: 2%;
     margin:auto;
     padding-bottom: 0px;
-    padding-top: 100px;
+    margin-top: 100px;
   }
   .size-H {
     font-size: 20px;
@@ -548,9 +548,7 @@ div.footer-footer{
 @media screen and (max-width: 968px) {
   
 
-.debut H1 {
-    
-}
+
 .col-md-100{
   width: 100% !important;
 }
