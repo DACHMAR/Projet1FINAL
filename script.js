@@ -1,28 +1,17 @@
-const hamburgerButton = document.querySelector(".nav-toggler")
-const navigation = document.querySelector("nav")
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const closeButton = document.getElementById('closeButton');
+  const menuOverlay = document.getElementById('menuOverlay');
 
-hamburgerButton.addEventListener("click", toggleNav)
+  // Ouverture du menu via le bouton hamburger
+  hamburger.addEventListener('click', function() {
+      menuOverlay.style.display = 'flex'; // Affiche le menu
+      hamburger.classList.toggle('is-active');
+  });
 
-function toggleNav(){
-  hamburgerButton.classList.toggle("active")
-  navigation.classList.toggle("active")
-}
-
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
+  // Fermeture du menu via le bouton "X"
+  closeButton.addEventListener('click', function() {
+      menuOverlay.style.display = 'none'; // Cache le menu
+      hamburger.classList.remove('is-active');
+  });
+});
