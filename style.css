@@ -589,8 +589,14 @@ div.footer-footer{
     /* Logo */
     .logo p {
       font-size: 1em;
+      margin-bottom: 50px;
     }
-  
+  .logo {
+    margin-top: 0;
+  }
+  h3 {
+    padding-left: 80px;
+  }
     /* Formulaire */
     .form-control {
       width: 100%;
@@ -637,9 +643,7 @@ div.footer-footer{
   }
   
   @media screen and (max-width: 650px) {
-    .text-overlay h1 {
-      display: none;
-    }
+    
   
     .text-overlay .text-banner {
       font-size: 1em; 
@@ -657,8 +661,18 @@ div.footer-footer{
     }
   }
   @media screen and (max-width: 650px) {
+    .text-overlay h1 {
+      font-size: 1.5em;
+    }
+    ul.menu-fixe{
+      display:none ;
+    }
     .menu-fixe{
-      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 0;
+      position: relative;
+      margin: auto;
     }
     .bottom-nav {
         display: flex;
@@ -763,17 +777,36 @@ div.footer-footer{
       align-items: center; 
       padding-right: 0; 
     }
+    .cadres-ronds {
+      display: block;
+      width: 50%;
+      flex-direction: ;
+      align-items: center;
+      justify-content: center;
+      padding-left: 100px;
+    }
+    .cadre2 {
+      border: none;
+      display: ;
+      flex-direction: column;
+    }
+    h3.titre-cadre {
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    
   }
   @media screen and (max-width: 450px) {
     .cadres-ronds {
       display: block;
-      width: 100%;
+      width: 50%;
+      flex-direction: ;
       align-items: center;
       justify-content: center;
     }
     .cadre2 {
       border: none;
-      display: none;
+      
     }
   }
 
