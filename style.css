@@ -763,6 +763,9 @@ div.footer-footer{
         color: black;
         font-size: 16px;
     }
+    .tof-slide H2 {
+      padding-top: 0;
+  }
 }
   @media screen and (max-width: 600px) {
     .details {
@@ -804,8 +807,10 @@ div.footer-footer{
     }
     .cadre2 {
       border: none;
-      
     }
+    .tof-slide H2 {
+      padding-top: 0;
+  }
   }
 
 
