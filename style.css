@@ -498,9 +498,24 @@ div.footer-footer{
   margin-left: -40px;
 }
 
-
-
-
+@media screen and (max-width: 2200px) {
+.menu-overlay {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.9); /* Noir semi-transparent */
+  color: white;
+  z-index: 2000; 
+  align-items: center; 
+  justify-content: center; 
+}
+.bottom-nav{
+display: none;
+}
+}
 @media screen and (max-width: 1200px) {
   
   nav {
