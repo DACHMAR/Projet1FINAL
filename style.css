@@ -451,8 +451,8 @@ section#contact {
     .footer-footer {
       display: flex;
       align-items: center;
-      justify-content: space-between; /* Modifiez ici pour espacer les éléments */
-      width: 80%; /* Assurez-vous que le conteneur s'étend sur toute la largeur disponible */
+      justify-content: space-between; 
+      width: 80%; /
     }
   .photos img{
     width: 20%;
@@ -517,6 +517,22 @@ div.footer-footer{
   .col-lg-100{
     width: 100%;
   }
+  .menu-overlay {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); /* Noir semi-transparent */
+    color: white;
+    z-index: 2000; 
+    align-items: center; 
+    justify-content: center; 
+}
+.bottom-nav{
+  display: none;
+}
 }
 
 
@@ -702,17 +718,17 @@ div.footer-footer{
         background-color: white;
     }
     .menu-overlay {
-      display: none; /* Caché par défaut */
-      position: fixed; /* Fixe par rapport à la fenêtre de visualisation */
+      display: none; 
+      position: fixed; 
       top: 0;
       left: 0;
-      width: 100%; /* Pleine largeur */
-      height: 100%; /* Pleine hauteur */
+      width: 100%; 
+      height: 100%; 
       background-color: rgba(0, 0, 0, 0.9); /* Noir semi-transparent */
       color: white;
-      z-index: 2000; /* Assurez-vous qu'il est au-dessus de tout autre contenu */
-      align-items: center; /* Centre verticalement le contenu */
-      justify-content: center; /* Centre horizontalement le contenu */
+      z-index: 2000; 
+      align-items: center; 
+      justify-content: center; 
   }
   .close-button {
     position: absolute;
@@ -729,21 +745,21 @@ div.footer-footer{
     color: #ccc;
 }
   .menu-overlay ul {
-      list-style: none; /* Supprime les puces */
+      list-style: none; 
       padding: 0;
   }
   
   .menu-overlay ul li a {
-      color: white; /* Texte blanc */
-      font-size: 34px; /* Taille de police plus grande pour lisibilité */
+      color: white; 
+      font-size: 34px; 
       padding: 20px;
-      display: block; /* Les liens prennent toute la largeur de leur conteneur */
-      text-align: center; /* Centre le texte */
-      text-decoration: none; /* Pas de soulignement */
+      display: block; 
+      text-align: center; 
+      text-decoration: none; 
   }
   
   .menu-overlay ul li a:hover {
-      background-color: #333; /* Fondu léger au survol */
+      background-color: #333; 
   }
     .mobile-menu.active {
         transform: translateY(0);
@@ -812,11 +828,7 @@ div.footer-footer{
       padding-top: 0;
   }
   }
+}
 
 
 
-
-
- 
-
-  
